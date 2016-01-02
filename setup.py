@@ -1,8 +1,9 @@
-from setuptools import setup, find_packages
+from setuptools import setup
+
 
 setup(
     name='settings-overrider',
-    version='0.5.0.dev0',
+    version='0.5.0',
     description='Override Python dict contents with YAML file and/or environment variables',
     long_description=(
         'Originally created for Django settings but may be useful in other cases. '
@@ -13,7 +14,7 @@ setup(
     author='Rostyslav Bryzgunov',
     author_email='kottenator@gmail.com',
     license='MIT',
-    packages=find_packages(exclude=['tests', 'tests.*']),
+    py_modules=['settings_overrider'],
     install_requires=['PyYAML'],
     extras_require={
         'test': [
