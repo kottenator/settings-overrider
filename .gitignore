@@ -1,0 +1,9 @@
+# Project generated files
+*.pyc
+/*.egg-info/
+/.eggs/
+
+# Python coverage
+/.coverage
+/coverage.xml
+/htmlcov/
