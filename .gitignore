@@ -1,12 +1,13 @@
-# Project generated files
+# Compiled
 *.pyc
 
-# Python coverage
+# Tests
 /.coverage
 /coverage.xml
 /htmlcov/
 
-# Dist files
+# Dist
 /dist/
-/.eggs/
 /*.egg-info/
+/.eggs/
+/.cache/
