@@ -1,5 +1,7 @@
 # settings-overrider
 
+[![Build Status](https://travis-ci.org/kottenator/settings-overrider.svg?branch=master)](https://travis-ci.org/kottenator/settings-overrider)
+
 Override Python dict contents with YAML file and/or environment variables.
 
 Originally created for Django settings but may be useful in other cases.
