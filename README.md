@@ -36,7 +36,7 @@ with open('/etc/project-settings.yaml') as f:
     override(globals(), yaml=f)
 ```
 
-Use environment variable(s) name prefix:
+Use all environment variables with specified prefix:
 
 ```py
 override(globals(), env='PRJ_')
