@@ -44,7 +44,13 @@ override(globals(), env='PRJ_')
 
 Prefix will be omitted, i.e. `PRJ_DEBUG` variable will become `DEBUG` setting.
 
-Variable content will be parsed as YAML.
+Variable content will be parsed as YAML so you can use:
+
+- `True` / `False`: bool
+- `Text` / `"Text"`: string
+- `123`: number
+- `{ default: { ENGINE: django.db.backends.sqlite3, NAME: /tmp/prj.sqlite3 }}` -
+  nested dicts
 
 You can combine YAML file and environment variables.
 
