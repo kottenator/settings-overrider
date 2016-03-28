@@ -3,7 +3,7 @@ from setuptools import setup
 
 setup(
     name='settings-overrider',
-    version='0.6.0.dev0',
+    version='0.6.0.dev1',
     description='Override Python dict contents with YAML file and/or environment variables',
     long_description=(
         'Originally created for Django settings but may be useful in other cases. '

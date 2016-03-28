@@ -37,6 +37,22 @@ def test_yaml_path(settings_dict):
     }
 
 
+def test_wrong_yaml_path(settings_dict):
+    """
+    Test ``override(d, yaml='/wrong/path/to/settings.yaml')``
+
+    :param settings_dict: custom fixture - initial settings dict
+    """
+    yaml_path = os.path.join(tests_dir, 'wrong', 'path', 'to', 'settings.yaml')
+    override(settings_dict, yaml=yaml_path)
+
+    assert settings_dict == {
+        'DEBUG': True,
+        'STATIC_ROOT': 'static',
+        'STATIC_URL': '/static/'
+    }
+
+
 def test_yaml_file(settings_dict):
     """
     Test ``override(d, yaml=yaml_file)``
