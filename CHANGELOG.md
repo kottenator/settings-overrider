@@ -1,5 +1,11 @@
 # Change Log
 
+## Unreleased
+
+### Changed
+
+- automatically check if YAML file exists
+
 ## 0.5.0 - 2016-01-01
 
 ### Added

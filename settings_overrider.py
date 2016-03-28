@@ -14,8 +14,9 @@ def override(settings, yaml=None, env=None):
         if hasattr(yaml, 'read'):
             settings.update(load_yaml(yaml.read()))
         else:
-            with open(yaml) as f:
-                settings.update(load_yaml(f.read()))
+            if os.path.exists(yaml):
+                with open(yaml) as f:
+                    settings.update(load_yaml(f.read()))
 
     if env is not None:
         for k, v in os.environ.items():
