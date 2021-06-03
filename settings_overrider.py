@@ -1,6 +1,6 @@
 import os
 
-from yaml import load as load_yaml
+from yaml import safe_load as load_yaml
 
 
 def override(settings, yaml=None, env=None):
